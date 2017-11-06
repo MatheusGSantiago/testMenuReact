@@ -1,0 +1,33 @@
+@import '../../../assets/styles/partials/_colors';
+@import '../../../assets/styles/partials/_fonts';
+
+nav {
+    min-height: 92px;
+    height: 92px;
+}
+
+.navbar-default {
+    background-color: $white;
+
+    .navbar-brand {
+        padding-right: 0;
+
+        > img {
+            width: 77px;
+            float: left;
+            margin: 0 10px 0 0;
+        }
+    }
+    span.subtitle {
+        color: $blue;
+        text-transform: uppercase;
+        font-family: $dosis-bold;
+        font-size: 18px;
+        margin: 35px 0 0 10px;
+        border-left: 1px solid $light-gray;
+        padding-left: 20px;
+        float: left;
+    }
+}
+
+

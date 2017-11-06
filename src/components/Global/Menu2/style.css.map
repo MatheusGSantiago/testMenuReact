@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "AAGA,AAAA,YAAY,CAAC;EACT,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,IAAI;CACd;;AAkBD,AAAA,EAAE,CAAC;EACC,KAAK,EAAE,IAAI;EACX,QAAQ,EAAE,KAAK;EACf,UAAU,EAAE,IAChB;CAAE;;AACF,AAAA,EAAE,CAAC;EACC,MAAM,EAAE,IAEZ;CAAE;;AAMF,AAAA,cAAc,CAAC;EACX,MAAM,EAAE,IACZ;CAAE",
+    "sources": [
+        "style.scss",
+        "../../../assets/styles/partials/_colors.scss",
+        "../../../assets/styles/partials/_fonts.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}

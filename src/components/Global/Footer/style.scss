@@ -1,0 +1,39 @@
+@import '../../../assets/styles/partials/_colors';
+@import '../../../assets/styles/partials/_fonts';
+
+footer {
+    color: $white;
+    background-color: $red;
+    height: 54px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+  
+    p {
+      color: $white;
+      font-size: 0.8em;
+      margin: 0;
+      b {
+          font-family: $dosis-bold;
+          text-transform: uppercase;
+          display: block;
+          font-size: 1em;
+        }
+      }
+  
+    a {
+      text-decoration: none;
+      display: block;
+    }
+
+    img {
+      margin-top: 15px;
+      width: 200px;
+      height: auto;
+      float: right;
+    }
+  
+  }
+  
+ 

@@ -1,0 +1,25 @@
+footer {
+  color: #FFFFFF;
+  background-color: #F01516;
+  height: 54px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0; }
+  footer p {
+    color: #FFFFFF;
+    font-size: 0.8em;
+    margin: 0; }
+    footer p b {
+      font-family: "dosis-bold", sans-serif;
+      text-transform: uppercase;
+      display: block;
+      font-size: 1em; }
+  footer a {
+    text-decoration: none;
+    display: block; }
+  footer img {
+    margin-top: 15px;
+    width: 200px;
+    height: auto;
+    float: right; }

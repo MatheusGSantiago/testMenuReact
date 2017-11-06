@@ -1,0 +1,101 @@
+/*
+* Roboto
+*/
+@font-face {
+  font-family: "roboto-thin";
+  font-style: normal;
+  font-weight: 100;
+  src: url("./assets/fonts/Roboto-Thin-webfont.eot?") format("eot"), url("./assets/fonts/Roboto-Thin-webfont.ttf") format("truetype"), url("./assets/fonts/Roboto-Thin-webfont.woff") format("woff"), url("./assets/fonts/Roboto-Thin-webfont.svg#roboto-thin") format("svg"); }
+
+@font-face {
+  font-family: "roboto-light";
+  font-style: normal;
+  font-weight: 300;
+  src: url("./assets/fonts/Roboto-Light-webfont.eot?") format("eot"), url("./assets/fonts/Roboto-Light-webfont.ttf") format("truetype"), url("./assets/fonts/Roboto-Light-webfont.woff") format("woff"), url("./assets/fonts/Roboto-Light-webfont.svg#roboto-light") format("svg"); }
+
+@font-face {
+  font-family: "roboto-regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets/fonts/Roboto-Regular-webfont.eot?") format("eot"), url("./assets/fonts/Roboto-Regular-webfont.ttf") format("truetype"), url("./assets/fonts/Roboto-Regular-webfont.woff") format("woff"), url("./assets/fonts/Roboto-Regular-webfont.svg#roboto-regular") format("svg"); }
+
+@font-face {
+  font-family: "roboto-medium";
+  font-style: normal;
+  font-weight: 500;
+  src: url("./assets/fonts/Roboto-Medium-webfont.eot?") format("eot"), url("./assets/fonts/Roboto-Medium-webfont.ttf") format("truetype"), url("./assets/fonts/Roboto-Medium-webfont.woff") format("woff"), url("./assets/fonts/Roboto-Medium-webfont.svg#roboto-medium") format("svg"); }
+
+@font-face {
+  font-family: "roboto-bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./assets/fonts/Roboto-Bold-webfont.eot?") format("eot"), url("./assets/fonts/Roboto-Bold-webfont.ttf") format("truetype"), url("./assets/fonts/Roboto-Bold-webfont.woff") format("woff"), url("./assets/fonts/Roboto-Bold-webfont.svg#roboto-bold") format("svg"); }
+
+@font-face {
+  font-family: "roboto-black";
+  font-style: normal;
+  font-weight: 900;
+  src: url("./assets/fonts/Roboto-Black-webfont.eot?") format("eot"), url("./assets/fonts/Roboto-Black-webfont.ttf") format("truetype"), url("./assets/fonts/Roboto-Black-webfont.woff") format("woff"), url("./assets/fonts/Roboto-Black-webfont.svg#roboto-black") format("svg"); }
+
+/*
+* Dosis
+*/
+@font-face {
+  font-family: "dosis-regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets/fonts/dosis-regular.eot?") format("eot"), url("./assets/fonts/dosis-regular.ttf") format("truetype"), url("./assets/fonts/dosis-regular.woff") format("woff"), url("./assets/fonts/dosis-regular.svg#dosis-regular") format("svg"); }
+
+@font-face {
+  font-family: "dosis-semibold";
+  font-style: normal;
+  font-weight: 600;
+  src: url("./assets/fonts/dosis-semibold.eot?") format("eot"), url("./assets/fonts/dosis-semibold.ttf") format("truetype"), url("./assets/fonts/dosis-semibold.woff") format("woff"), url("./assets/fonts/dosis-semibold.svg#dosis-semibold") format("svg"); }
+
+@font-face {
+  font-family: "dosis-bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./assets/fonts/dosis-bold.eot?") format("eot"), url("./assets/fonts/dosis-bold.ttf") format("truetype"), url("./assets/fonts/dosis-bold.woff") format("woff"), url("./assets/fonts/dosis-bold.svg#dosis-bold") format("svg"); }
+
+@font-face {
+  font-family: "dosis-extrabold";
+  font-style: normal;
+  font-weight: 800;
+  src: url("./assets/fonts/dosis-extrabold.eot?") format("eot"), url("./assets/fonts/dosis-extrabold.ttf") format("truetype"), url("./assets/fonts/dosis-extrabold.woff") format("woff"), url("./assets/fonts/dosis-extrabold.svg#dosis-extrabold") format("svg"); }
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://github.com/google/material-design-icons/blob/master/iconfont/MaterialIcons-Regular.eot);
+  /* For IE6-8 */
+  src: local("Material Icons"), local("MaterialIcons-Regular"), url(https://github.com/google/material-design-icons/blob/master/iconfont/MaterialIcons-Regular.woff2) format("woff2"), url(https://github.com/google/material-design-icons/blob/master/iconfont/MaterialIcons-Regular.woff) format("woff"), url(https://github.com/google/material-design-icons/blob/master/iconfont/MaterialIcons-Regular.ttf) format("truetype"); }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #F0F0F0; }
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga'; }

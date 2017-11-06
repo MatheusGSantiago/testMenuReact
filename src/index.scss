@@ -1,0 +1,68 @@
+@import './assets/styles/partials/_fonts';
+@import './assets/styles/partials/_colors';
+@import './assets/styles/partials/_variables';
+@import './assets/styles/partials/_mixins';
+
+
+
+/*
+* Roboto
+*/
+@include font-face(roboto-thin, './assets/fonts/Roboto-Thin-webfont', 100, normal, eot ttf woff svg);
+@include font-face(roboto-light, './assets/fonts/Roboto-Light-webfont', 300, normal, eot ttf woff svg);
+@include font-face(roboto-regular, './assets/fonts/Roboto-Regular-webfont', 400, normal, eot ttf woff svg);
+@include font-face(roboto-medium, './assets/fonts/Roboto-Medium-webfont', 500, normal, eot ttf woff svg);
+@include font-face(roboto-bold, './assets/fonts/Roboto-Bold-webfont', 700, normal, eot ttf woff svg);
+@include font-face(roboto-black, './assets/fonts/Roboto-Black-webfont', 900, normal, eot ttf woff svg);
+
+/*
+* Dosis
+*/
+@include font-face(dosis-regular, './assets/fonts/dosis-regular', 400, normal, eot ttf woff svg);
+@include font-face(dosis-semibold, './assets/fonts/dosis-semibold', 600, normal, eot ttf woff svg);
+@include font-face(dosis-bold, './assets/fonts/dosis-bold', 700, normal, eot ttf woff svg);
+@include font-face(dosis-extrabold, './assets/fonts/dosis-extrabold', 800, normal, eot ttf woff svg);
+
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://github.com/google/material-design-icons/blob/master/iconfont/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(https://github.com/google/material-design-icons/blob/master/iconfont/MaterialIcons-Regular.woff2) format('woff2'),
+    url(https://github.com/google/material-design-icons/blob/master/iconfont/MaterialIcons-Regular.woff) format('woff'),
+    url(https://github.com/google/material-design-icons/blob/master/iconfont/MaterialIcons-Regular.ttf) format('truetype');
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: $silver;
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}

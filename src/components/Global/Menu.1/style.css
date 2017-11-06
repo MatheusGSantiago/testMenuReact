@@ -1,0 +1,34 @@
+ul {
+  list-style: none;
+  padding-left: 0; }
+
+li.first-level a,
+li.second-level a,
+li.third-level a {
+  color: #9C9C9C; }
+
+li.first-level > a {
+  text-transform: uppercase;
+  font-family: "roboto-bold", sans-serif;
+  font-size: 13px; }
+
+li.first-level a:active {
+  border-left: 5px solid #F01516; }
+
+li.second-level > a {
+  font-family: "roboto-bold", sans-serif;
+  font-size: 13px;
+  padding-left: 30px; }
+
+li.second-level a:active {
+  color: #F01516;
+  border: none; }
+
+li.third-level > a {
+  font-family: "roboto-regular", sans-serif;
+  font-size: 13px;
+  padding-left: 45px; }
+
+.icon-menu {
+  height: 20px;
+  width: 20px; }

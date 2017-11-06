@@ -1,0 +1,16 @@
+.icon-menu18 {
+  height: 18px;
+  width: 18px; }
+
+ul {
+  float: left;
+  list-style: none; }
+
+.collapse-menu {
+  height: auto; }
+
+.collapse {
+  display: none; }
+
+.collapse.in {
+  display: block; }

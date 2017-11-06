@@ -1,0 +1,47 @@
+@import '../../../assets/styles/partials/_colors';
+@import '../../../assets/styles/partials/_fonts';
+
+.icon-menu18 {
+    height: 18px;
+    width: 18px;
+}
+
+// li {
+//     position: relative;
+//     list-style: none;
+//     height: 50px;
+//     border-bottom: 0.5px solid $silver;
+//     float: left;
+
+//     a,
+//     a:hover {
+//         text-decoration: none;
+//         font-family: $roboto-regular;
+//         color: $gray;
+//         font-size: 14px;
+//     }
+// }
+
+ul {
+    float: left;
+    list-style: none
+}
+
+
+// .Collapsible {
+//     float: left
+// }
+
+.collapse-menu {
+    height: auto
+}
+
+.collapse {
+    display: none
+  }
+
+  .collapse.in {
+    display: block
+  }
+
+

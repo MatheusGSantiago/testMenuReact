@@ -1,0 +1,104 @@
+@import './_variables';
+
+// String Replace
+@function str-replace($string, $search, $replace: "") {
+    $index: str-index($string, $search);
+    @if $index {
+        @return str-slice($string, 1, $index - 1)+$replace+str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+    }
+    @return $string;
+}
+
+// Font Face
+@mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
+    $src: null;
+    $extmods: ( eot: "?", svg: "#" + str-replace($name, " ", "_"));
+    $formats: ( otf: "opentype", ttf: "truetype");
+    @each $ext in $exts {
+        $extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+        $format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+        $src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
+    }
+    @font-face {
+        font-family: quote($name);
+        font-style: $style;
+        font-weight: $weight;
+        src: $src;
+    }
+}
+
+// Border Radius
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+// Basic Transition
+@mixin transition($time) {
+    -webkit-transition: ease-in-out all $time;
+    -moz-transition: ease-in-out all $time;
+    transition: ease-in-out all $time;
+}
+
+//Transform
+@mixin transform($transform) {
+    -webkit-transform: $transform;
+    -moz-transform: $transform;
+    transform: $transform
+}
+
+// Box Sizing
+@mixin box-sizing($sizing) {
+    -moz-box-sizing: $sizing;
+    -webkit-box-sizing: $sizing;
+    box-sizing: $sizing;
+}
+
+@mixin box-shadow($effects) {
+    -webkit-box-shadow: $effects;
+    -moz-box-shadow: $effects;
+    box-shadow: $effects;
+}
+
+// Linear Gradient
+@mixin linear-gradient($firstColor, $secondColor) {
+    background: $firstColor;
+    background: -moz-linear-gradient(left, $firstColor 0%, $secondColor 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, $firstColor), color-stop(100%, $secondColor));
+    background: -webkit-linear-gradient(left, $firstColor 0%, $secondColor 100%);
+    background: -o-linear-gradient(left, $firstColor 0%, $secondColor 100%);
+    background: -ms-linear-gradient(left, $firstColor 0%, $secondColor 100%);
+    background: linear-gradient(to right, $firstColor 0%, $secondColor 100%);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$firstColor}', endColorstr='#{$secondColor}', GradientType=1 )";
+}
+
+// Menu Icons
+@mixin menu-icon($icon, $size: 30px, $paddingTop: 70px) {
+    background: url($icon) no-repeat center 28px;
+    background-size: auto $size;
+    padding-top: $paddingTop;
+
+    @media all and (min-width: $tablet-size) and (max-width: $desktop-size) {
+        background-position: center;
+    }
+}
+
+@mixin submenu-icon($icon) {
+    background-image: url($icon), url('../../../assets/images/ic_arrow_submenu.png');
+}
+
+@mixin mobile-submenu-icon($icon) {
+    background-image: url($icon), url('../../../assets/images/ic_chevron_right_small_blue.png');
+}
+
+@mixin curve() {
+    @include border-radius(50%/0 0 70px 70px);
+    
+    @supports (clip-path: ellipse(90% 100% at 50% 0)) {
+        clip-path: ellipse(90% 100% at 50% 0);
+        @include border-radius(0);
+    }
+}
+// ADD MORE MIXINS =)

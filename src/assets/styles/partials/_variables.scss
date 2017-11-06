@@ -1,0 +1,57 @@
+// Tamanho das telas
+
+// Custom, iPhone Retina
+$iphone-retina-size: 320px;
+
+// Extra Small Devices, Phones
+$phone-size: 480px;
+
+// Small Devices, Tablets
+$tablet-size: 768px;
+
+// Medium Devices, Desktops
+$desktop-size: 992px;
+
+// Large Devices, Wide Screens
+$large-desktop-size: 1200px;
+
+// Use media queries com os tamanhos definidos
+// @media only screen and (max-width : $phone-size) {}
+
+
+// Titles sizes
+$page-title-size: 45px;
+$feature-title-size: 30px;
+$subtitle-size: 24px;
+
+// Mobile titles sizes
+$mobile-page-title-size: 35px;
+$mobile-feature-title-size: 28px;
+$mobile-subtitle-size: 20px;
+
+// Header sizes
+$header-height: 140px;
+$header-border: 20px;
+$mobile-header-height: 110px;
+
+// Menu sizes
+$menu-element-width: 112px;
+$menu-height: 120px;
+$mobile-menu-height: 100px;
+
+// Submenu sizes
+$submenu-height: 184px;
+
+// Mobile username area
+$mobile-username-bar-height: 32px;
+
+// Footer sizes
+$footer-height: 356px;
+
+// Button
+$button-height: 40px;
+$button-line-height: 40px;
+$button-secondary-line-height: 35px;
+$max-button-width: 280px;
+
+// Adicionar outros variáveis abaixo

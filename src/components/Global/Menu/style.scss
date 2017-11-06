@@ -1,0 +1,52 @@
+@import '../../../assets/styles/partials/_colors';
+@import '../../../assets/styles/partials/_fonts';
+
+
+.menu {
+     a {
+        text-decoration: none;
+        color: $gray;
+    }
+
+} 
+
+.nav {
+    
+    > li {
+        height: 50px;
+        white-space: nowrap;
+        
+        > a {
+            display: flex;
+
+            > i {
+                float: right
+            }
+        }
+        
+    }
+    > li:active {
+        border-left: 5px solid red;
+    }
+
+
+    
+}
+
+
+ li.third-level {
+    > a {
+       font-family: $roboto-regular;
+       font-size: 13px;
+       padding-left: 45px;      
+    }
+}
+
+.icon-menu {
+    float: left;
+    margin-right: 20px;
+    margin-top: 0;
+    height: 20px;
+    width: 20px;
+  }
+
